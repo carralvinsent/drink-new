@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DRINKS ONLINE</title>
+    <link rel="stylesheet" href="header.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif
+        }
+
+        body {
+            background: #ecf0f3
+        }
+
+        .wrapper {
+            max-width: 350px;
+            min-height: 500px;
+            margin: 80px auto;
+            padding: 40px 30px 30px 30px;
+            background-color: #ecf0f3;
+            border-radius: 15px;
+            box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff
+        }
+
+        .logo {
+            width: 80px;
+            margin: auto
+        }
+
+        .logo img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0px 0px 3px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaa7, -8px -8px 15px #fff
+        }
+
+        .wrapper .name {
+            font-weight: 600;
+            font-size: 1.4rem;
+            letter-spacing: 1.3px;
+            padding-left: 10px;
+            color: #555
+        }
+
+        .wrapper .form-field input {
+            width: 100%;
+            display: block;
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 1.2rem;
+            color: #666;
+            padding: 10px 15px 10px 10px
+        }
+
+        .wrapper .form-field {
+            padding-left: 10px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff
+        }
+
+        .wrapper .form-field .fas {
+            color: #555
+        }
+
+        .wrapper .btn {
+            width: 100%;
+            height: 40px;
+            background-color: #383838;
+            color: #fff;
+            border-radius: 25px;
+            box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
+            letter-spacing: 1.3px
+        }
+
+        .wrapper .btn:hover {
+            background-color: #039BE5
+        }
+
+        .wrapper a {
+            text-decoration: none;
+            font-size: 0.8rem;
+            color: #03A9F4
+        }
+
+        .wrapper a:hover {
+            color: #707070
+        }
+
+        @media (max-width: 380px) {
+            .wrapper {
+                margin: 30px 20px;
+                padding: 40px 15px 15px 15px
+            }
+        }
+
+        body, html {
+            height: 100%;
+            background-attachment: fixed;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("https://img2.goodfon.com/wallpaper/nbig/4/d9/tropical-drink-fresh-fruit-4876.jpg");
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+<body style="background-color:#C0C0C0" class="bg">
+
+<div class="wrapper">
+    <div class="logo">
+        <img src="data:image/png;base64,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"
+             class="img-fluid"></div>
+    <div class="text-center mt-4 name"> Drinks Online Register</div>
+
+    <form th:action="@{/registration}" action="#" class="p-3 mt-3" th:object="${user}" method="post">
+
+        <span class="text-danger" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></span>
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <label for="username" class="control-label"></label>
+            <input id="username" class="form-control" th:field="*{username}" placeholder="Username"/>
+        </div>
+
+        <span class="text-danger" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span>
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <label for="password" class="control-label"></label>
+            <input id="password" class="form-control" th:field="*{password}" type="password" placeholder="Password"/>
+        </div>
+
+        <span class="text-danger" th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}"></span>
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <label for="birthday" class="control-label">Birthday:</label>
+            <input id="birthday" class="form-control" th:field="*{birthday}" type="date" required/>
+        </div>
+
+        <div class="form-group" style="text-align: center">
+            <button type="submit" class="btn mt-3">Register</button>
+            <br>
+            <br>
+            <div th:if="${param.success}">
+                <div class="alert alert-info">You've successfully registered
+                    to our awesome app! Click below to Login!!
+                </div>
+            </div>
+            <span>Already registered?</span>
+            <br>
+            <span> <a href="/" th:href="@{/Login}">Login here</a></span>
+        </div>
+
+    </form>
+
+</div>
+
+<script type="text/javascript"
+        th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+<script type="text/javascript"
+        th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+</body>
+</html>
